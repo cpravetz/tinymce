@@ -1,6 +1,6 @@
 Package.describe({
     name: 'salmanhasni:tinymce',
-      version: '5.0.20',
+      version: '5.0.21',
       summary: "tinymce library",
       git: 'https://github.com/salmanhasni/tinymce.git',
       documentation: 'README.md'
