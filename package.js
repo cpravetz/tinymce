@@ -1,18 +1,19 @@
 Package.describe({
-    name: 'teamon:tinymce',
-    version: '4.5.4',
-    summary: 'TinyMCE editor',
-    git: 'https://github.com/teamOnHQ/tinymce.git',
+    name: 'salmanhasni:tinymce',
+      version: '5.0.15',
+      summary: "tinymce library",
+      git: 'https://github.com/salmanhasni/tinymce.git',
+      documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-    api.versionsFrom('1.2.1');
-
+    api.versionsFrom('1.8.1');
+    api.use('ecmascript');
     // client files
     api.addFiles([
         // core files
         'tinymce.min.js',
-
+        
         // plugins
         'plugins/advlist/plugin.min.js',
         'plugins/autoresize/plugin.min.js',
