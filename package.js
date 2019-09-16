@@ -18,6 +18,7 @@ Package.onUse(function(api) {
         'plugins/autoresize/plugin.min.js',
         'plugins/charmap/plugin.min.js',
         'plugins/colorpicker/plugin.min.js',
+        'plugins/emoticons/js/emojis.min.js',
         'plugins/emoticons/plugin.min.js',
         'plugins/fullpage/plugin.min.js',
         'plugins/image/plugin.min.js',
