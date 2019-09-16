@@ -1,6 +1,6 @@
 Package.describe({
     name: 'salmanhasni:tinymce',
-      version: '5.0.15',
+      version: '5.0.20',
       summary: "tinymce library",
       git: 'https://github.com/salmanhasni/tinymce.git',
       documentation: 'README.md'
@@ -12,7 +12,7 @@ Package.onUse(function(api) {
     api.addFiles([
         // core files
         'tinymce.min.js',
-        
+
         // plugins
         'plugins/advlist/plugin.min.js',
         'plugins/autoresize/plugin.min.js',
@@ -35,11 +35,13 @@ Package.onUse(function(api) {
         'plugins/contextmenu/plugin.min.js',
         // 'plugins/example/plugin.min.js',
         'plugins/fullscreen/plugin.min.js',
+        'plugins/help/plugin.min.js',
         'plugins/imagetools/plugin.min.js',
         'plugins/legacyoutput/plugin.min.js',
         'plugins/media/plugin.min.js',
         'plugins/pagebreak/plugin.min.js',
         'plugins/print/plugin.min.js',
+        'plugins/quickbars/plugin.min.js',
         'plugins/spellchecker/plugin.min.js',
         'plugins/template/plugin.min.js',
         'plugins/toc/plugin.min.js',
@@ -60,29 +62,28 @@ Package.onUse(function(api) {
         'plugins/visualblocks/plugin.min.js',
 
         // themes
-        'themes/modern/theme.min.js',
-        'themes/inlite/theme.min.js',
+        'themes/mobile/theme.min.js',
+        'themes/silver/theme.min.js'
     ], 'client');
 
     api.addAssets([
         // skins
-        'skins/lightgray/content.inline.min.css',
-        'skins/lightgray/content.min.css', // modified
-        'skins/lightgray/skin.ie7.min.css',
-        'skins/lightgray/skin.min.css',
+        'skins/content/default/content.min.css',
+        'skins/content/document/content.min.css',
+        'skins/content/writer/content.min.css',
 
-        'skins/lightgray/fonts/tinymce-small.eot',
-        'skins/lightgray/fonts/tinymce-small.svg',
-        'skins/lightgray/fonts/tinymce-small.ttf',
-        'skins/lightgray/fonts/tinymce-small.woff',
-        'skins/lightgray/fonts/tinymce.eot',
-        'skins/lightgray/fonts/tinymce.svg',
-        'skins/lightgray/fonts/tinymce.ttf',
-        'skins/lightgray/fonts/tinymce.woff',
+        'skins/ui/oxide/fonts/tinymce-mobile.woff',
+        'skins/ui/oxide/content.inline.min.css',
+        'skins/ui/oxide/content.min.css',
+        'skins/ui/oxide/content.mobile.min.css',
+        'skins/ui/oxide/skin.min.css',
+        'skins/ui/oxide/skin.mobile.min.css',
 
-        'skins/lightgray/img/anchor.gif',
-        'skins/lightgray/img/loader.gif',
-        'skins/lightgray/img/object.gif',
-        'skins/lightgray/img/trans.gif',
+        'skins/ui/oxide-dark/fonts/tinymce-mobile.woff',
+        'skins/ui/oxide-dark/content.inline.min.css',
+        'skins/ui/oxide-dark/content.min.css',
+        'skins/ui/oxide-dark/content.mobile.min.css',
+        'skins/ui/oxide-dark/skin.min.css',
+        'skins/ui/oxide-dark/skin.mobile.min.css'
     ], 'client');
 });

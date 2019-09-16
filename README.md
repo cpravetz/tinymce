@@ -3,7 +3,7 @@
 Use TinyMCE editor for your meteor app.
 
 ```
-$ meteor add teamon:tinymce
+$ meteor add salmanhasni:tinymce
 ```
 
 ### Initialization
