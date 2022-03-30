@@ -7,12 +7,11 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-    api.versionsFrom('1.8.1');
+    api.versionsFrom('2.3');
     // client files
     api.addFiles([
         // core files
         'tinymce.min.js',
-
         // plugins
         'plugins/advlist/plugin.min.js',
         'plugins/autoresize/plugin.min.js',
